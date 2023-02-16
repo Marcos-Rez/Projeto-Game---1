@@ -16,5 +16,15 @@ ninja.addEventListener('click',()=>{
 let guerreira = document.querySelector('#guerreira');
 guerreira.addEventListener('click', ()=>{
     localStorage.setItem('personagem', 2)
+});
+
+let centuriao = document.querySelector('#Centuriao');
+centuriao.addEventListener('click', ()=>{
+    localStorage.setItem('personagem', 3)
 })
 
+let soldado = document.querySelector('#Soldado');
+alert(soldado.innerHTML)
+soldado.addEventListener('click', ()=>{
+    localStorage.setItem('personagem', 4)
+})

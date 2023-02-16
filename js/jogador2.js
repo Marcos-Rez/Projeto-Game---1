@@ -21,9 +21,15 @@ if(personagemEscolido == 1){
 */
 switch(personagemEscolido){
     case '1': 
-    document.getElementById('mostra-ninja').style.display = 'block';
-    break;
+        document.getElementById('mostra-ninja').style.display = 'block';
+        break;
     case '2': 
         document.getElementById('mostra-guerreira').style.display = 'block';
-    break;
+        break;
+    case '3':
+        document.getElementById('mostra-centuriao').style.display = 'block';
+        break;
+    case '4':
+        document.getElementById('mostra-soldado').style.display = 'block';
+        break;
 }
