@@ -32,4 +32,19 @@ switch(personagemEscolido){
     case '4':
         document.getElementById('mostra-soldado').style.display = 'block';
         break;
+    case '5':
+        document.getElementById('mostra-fada').style.display = 'block';
+        break;
+    case '6':
+        document.getElementById('mostra-mago').style.display = 'block';
+        break;
+    case '7':
+        document.getElementById('mostra-necromante').style.display = 'block';
+        break;
+    case '8': 
+        document.getElementById('mostra-elfo').style.display = 'block';
+        break;
+    case '9':
+        document.getElementById('mostra-troll').style.display = 'block';
+        break;
 }
