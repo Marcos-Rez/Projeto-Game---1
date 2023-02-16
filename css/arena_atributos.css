@@ -1,0 +1,44 @@
+/*__________  atributos batalha __________*/
+
+#atributos{
+    margin-top: 7vh;
+    min-width: 35vw;
+    max-height: 5vh;
+    box-shadow: #080808 1px 3px 20px;
+    margin: 7vh auto;
+    background-color: rgba(193, 202, 199, 0.233);
+}
+#container-princial{
+    display: flex;
+    min-width: 25vw;
+    justify-content: space-around;
+}
+.container-vida{
+    min-width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#vida-p1{
+    max-width: 12vw;
+    background-color: lime;
+}
+#vida-p2{
+    max-width: 12vw;
+    background-color: lime;
+    justify-self: end;
+}
+
+#container-secundario{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+    background-color: rgba(193, 202, 199, 0.233);
+}
+#container-rodada{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(193, 202, 199, 0.233);
+}

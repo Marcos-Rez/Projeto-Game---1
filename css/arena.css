@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Cinzel Decorative', cursive;
+    color: antiquewhite;
+    /*background-color: rgb(27, 24, 24);*/
+    background-image: ('../IMG/bullfight-g58ff591a1_1280.jpg');
+    background: url('../IMG/vecteezy_ancient-roman.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+li{
+    list-style: none;
+}
+
+header {
+    background-color:#4b0000;
+    max-width: 100vw;
+}
+#cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}#cabecalho img{
+    box-shadow: 3px 3px 38px red;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+#logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#logo p{
+    color: antiquewhite;
+}
+#menu{
+    display: flex;
+}
+#iniciar{
+    margin-right: 4vw;
+}
+#reiniciar{
+    margin-right: 4vw;
+}
+#main{
+    display: flex;
+}

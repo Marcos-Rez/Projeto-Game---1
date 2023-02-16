@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Cinzel Decorative', cursive;
+    color: antiquewhite;
+    /*background-color: rgb(27, 24, 24);*/
+    background-image: url();
+
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+li{
+    list-style: none;
+}
+
+header {
+    background-color:#4b0000;
+    max-width: 100vw;
+}
+#cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}#cabecalho img{
+    box-shadow: 3px 3px 38px red;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+#logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#logo p{
+    color: antiquewhite;
+}
+#menu{
+    display: flex;
+}
+#iniciar{
+    margin-right: 4vw;
+}
+#reiniciar{
+    margin-right: 4vw;
+}
+main{
+    background-color: rgb(27, 24, 24);
+    max-width: 85vw;
+    margin: 3vh auto;
+   
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7vh;
+    
+}
+.humanos{
+    background-color: rgb(202, 5, 5);
+    box-shadow: rgb(255, 54, 54) 1px 3px 25px;
+    border-radius: 25px;
+}
+.magia{
+    background-color: rgb(8, 204, 8);
+    box-shadow: rgb(115, 255, 0) 1px 3px 25px;
+    border-radius: 25px;
+}
+.monstros{
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgb(0, 0, 0) 1px 3px 35px;
+    border-radius: 25px;
+}
+.robos{
+    background-color: midnightblue;
+
+    box-shadow: rgb(33, 33, 202) 1px 3px 25px;
+    border-radius: 25px;
+}
+
+
+.personagens{
+    max-width: 40vw;
+    max-height: 80vh;
+}
+.container-tamanho{
+    max-width: 40vw;
+    max-height: 80vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 40px;
+    background-color: rgb(17, 17, 17);
+    box-shadow: #080808 1px 3px 20px;
+    
+}
+.container-tamanho:hover{
+    box-shadow: #f3f6f7 1px 5px 5px 1px;
+}
+
+.img{
+    max-width: 20vw;
+}
+#ninja-img{
+    max-width: 19.3vw;
+    padding-bottom: 3vh;
+    padding-top: 2.8vh;
+}
+#guerreira-img{
+    max-width: 19.3vw;
+    padding-bottom: 3vh;
+    padding-top: 2.8vh;
+}
+#soldado{
+    max-height: 58vh;
+    padding-bottom: 1.9vh;
+    padding-right: 0.7vw;
+    padding-left: 0.vw;
+   
+}
+#fada-img{
+    margin-top: 2vh;
+    max-width: 19.23vw;
+    padding-top: 5vh;
+}
+#elfo{
+    max-height: 55vh;
+    padding-left: 2.7vw;
+    padding-right: 1vw;
+    padding-bottom: 2vh;
+    margin-top: 2vh;
+}
+#mago{
+    max-height: 57vh;
+    padding-left: 0.45vw;
+    padding-right: 0.45vw;
+    margin-top: 2vh;
+}
+#centuriao{
+    max-width: 19.3vw;
+    padding-bottom: 2.5vh;
+    padding-top: 3.3vh;
+}
+#necromante{
+    padding-left: 2.9vw;
+    padding-right: 2.9vw;
+    padding-bottom: 2.2vh;
+    padding-top: 2vh;
+    padding-top: 5vh;
+}
+#troll-img{
+    max-width: 19.2vw;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+}
+#orc-img{
+    max-width: 19.2vw;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+  
+ 
+}
+#lobisomem-img{
+    padding-top: 7.5vh;
+    padding-bottom: 0.3vh;
+    max-width: 19.4vw;
+}
+
+#orc-warrior{
+    max-width: 19vw;
+    padding-top: 14vh;
+    padding-bottom: 11vh;
+}
+
+#cyber-human-img{
+    max-width: 16vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    max-height: 60vh;
+}
+
+#spider-img{
+    max-width: 18.7vw;
+    padding-top: 24.1vh;
+    padding-bottom: 16.5vh;
+}
+#war-robot-img{
+    max-width: 19vw;
+    padding-top: 14.4vh;
+    padding-bottom: 0vh;
+}
