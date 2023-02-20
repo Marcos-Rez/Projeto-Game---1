@@ -26,21 +26,30 @@ function ataque(ataque, agilidade, habilidade, nomeDoJogador, escutarPersonagem 
     let ataque_p = ataque + habilidade_p;
 
     let atacandoCom = document.querySelector(nomeDoJogador);//'#atacando-1' ou '#atacando-2'
-    atacandoCom.innerText = ataque_p;
 
+    
+    let contadorDeAtaque = 0;
+    if(contadorDeAtaque == 0){
+        contadorDeAtaque++;
+        atacandoCom.innerText = ataque_p;
+        localStorage.setItem(escutarPersonagem, ataque_p);
+    }
+   
     atacar.addEventListener('click', ()=>{//'#atacando_p1' ou '#atacando_p2'
+        
         localStorage.setItem(escutarPersonagem, ataque_p);
         dados = habilidade * 6;
         habilidade_p = Math.floor(Math.random() * (dados - 1 + 1) + 1);
         ataque_p = ataque + habilidade_p;
-    
+
         atacandoCom = document.querySelector(nomeDoJogador);//'#atacando-1' ou '#atacando-2'
         atacandoCom.innerText = ataque_p;
-   
-        //window.location.reload();
+        localStorage.setItem(escutarPersonagem, ataque_p);
+        
     });
 
     return ataque_p;
+   
 }
 function defesa(defesa, agilidade, habilidade, nomeDoJogador, escutarPersonagem){
     let dados = habilidade * 6;

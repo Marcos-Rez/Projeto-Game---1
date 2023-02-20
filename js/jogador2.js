@@ -37,18 +37,16 @@ function ataque(ataque, agilidade, habilidade, nomeDoJogador ){
         atacandoCom.innerText = ataque_p;
         return ataque_p;
     })
-
-
 }
 
 function defesa(defesa, agilidade, habilidade, nomeDoJogador){
     let ataq = document.querySelector('.espada');
+
     ataq.addEventListener('click', ()=>{
         let dados = habilidade * 6;
         let habilidade_p2 = Math.floor(Math.random() * (dados - 1 + 1) + 1);
         let defesa_p = defesa + habilidade_p2;
-
-            let defendendoCom = document.querySelector(nomeDoJogador);//'#defendendo-2'
+        let defendendoCom = document.querySelector(nomeDoJogador);//'#defendendo-2'
             defendendoCom.innerText = defesa_p;
             localStorage.setItem('#defesa_p2', defesa_p);
             return defesa_p;
@@ -62,10 +60,13 @@ function nomeVida(nomeJogador, vida){
     let porcentagem = 0;
         porcentagem += (10 * vida) / 100;
 
+    let nome = document.querySelector('#nome-jogador2');
+    let vidaJogador2 = document.querySelector('#vida-p2');
+    nome.innerText = nomeJogador;
+    vidaJogador2.innerText = life;
     let ataq = document.querySelector('.espada');
+    
     ataq.addEventListener('click', ()=>{
-        let nome = document.querySelector('#nome-jogador2');
-        let vidaJogador2 = document.querySelector('#vida-p2');
 
         ataqueDaDeP1 = Number(localStorage.getItem('#atacando_p1'));
         defesaDeP2 = Number(localStorage.getItem('#defesa_p2'));
@@ -84,9 +85,6 @@ function nomeVida(nomeJogador, vida){
         
     })
    
-
-    
-
     vida = life / 10;
 
     porcentagem += vida;//somar ou dimiuir
