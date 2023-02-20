@@ -1,44 +1,141 @@
 /*__________  atributos batalha __________*/
-
+*{
+    padding: 0;
+    margin: 0;
+}
 #atributos{
-    margin-top: 7vh;
-    min-width: 35vw;
-    max-height: 5vh;
-    box-shadow: #080808 1px 3px 20px;
-    margin: 7vh auto;
-    background-color: rgba(193, 202, 199, 0.233);
+    margin-top: 5vh;
+    max-width: 90vw;
+    box-shadow: #0e0c0c60 1px 3px 20px;
+    background-color: rgba(193, 202, 199, 0.089);
+    border-radius: 7px;
+
+    
 }
 #container-princial{
     display: flex;
-    min-width: 25vw;
-    justify-content: space-around;
+    min-width: 37vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    justify-content: space-evenly;
+    background-color: rgb(29, 27, 27);
+    border-radius: 7px;
 }
 .container-vida{
-    min-width: 10vw;
-    display: flex;
+    min-width: 15vw;
+    display: block;
     align-items: center;
     justify-content: center;
+    margin-left: 4vw;
+
+}
+
+#container-vida-p2{
+    justify-content: end;
+    justify-self: end;
+    align-items: center;
+}
+#nome-jogador1{
+    padding-left: 4vw;
+    text-align: center;
+}
+#nome-jogador2{
+    padding-left: 4vw;
+    text-align: center;
 }
 #vida-p1{
-    max-width: 12vw;
     background-color: lime;
+    text-align: center;
 }
 #vida-p2{
-    max-width: 12vw;
     background-color: lime;
     justify-self: end;
+    text-align: center;
+    font-weight: bold;
+
+}
+#versus{
+    font-size: 1.4em;
+    margin-left: vw;
+    
 }
 
 #container-secundario{
     display: flex;
+    min-width: 36vw;
     justify-content: space-around;
     margin-top: 3vh;
-    background-color: rgba(193, 202, 199, 0.233);
+    background-color: rgba(42, 44, 43, 0.61);
+    border-radius: 7px;
 }
+
 #container-rodada{
     margin-top: 2vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(193, 202, 199, 0.233);
+    background-color: rgba(42, 44, 43, 0.61);
+    border-radius: 7px;
+
+}
+.jogador p{
+    padding-top: 0.5vh;
+}
+
+#ataque-defesa{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+    max-height: 15vh;
+ 
+
+    background-color: rgba(42, 44, 43, 0.61);
+    border-radius: 7px;
+}
+
+.container-resultado{
+    display: flex;
+   
+}
+
+.espada{
+    max-width: 3.5vw;
+    cursor: pointer;
+    transform: scaleY(-1);
+    margin-right: 2vw;
+    padding-left: 1vw;
+
+}
+.espada:hover{
+    padding-right: 0.5vw;
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 7px;
+}
+.escudo{
+    max-width: 5vw;
+    cursor: pointer;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+}
+.escudo:hover{
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 7px;
+}
+#dado{
+    max-width: 4vw;
+    border-radius: 14px;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 7vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: black;
+}
+
+#rodadas{
+    padding-top: 2vh;
 }

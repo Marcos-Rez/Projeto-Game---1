@@ -5,8 +5,11 @@
 body{
     font-family: 'Cinzel Decorative', cursive;
     color: antiquewhite;
-    /*background-color: rgb(27, 24, 24);*/
-    background-image: url();
+
+    background-image: url('../IMG/angel-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 
 }
 a{
@@ -50,35 +53,42 @@ header {
     margin-right: 4vw;
 }
 main{
-    background-color: rgb(27, 24, 24);
     max-width: 85vw;
     margin: 3vh auto;
-   
+
+    
 }
+
 .container{
     display: flex;
     justify-content: center;
-    margin-bottom: 7vh;
-    
+    margin-bottom: 7vh;    
 }
 .humanos{
-    background-color: rgb(202, 5, 5);
     box-shadow: rgb(255, 54, 54) 1px 3px 25px;
     border-radius: 25px;
+    background-image: url('../IMG/Fundos/angel-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .magia{
-    background-color: rgb(8, 204, 8);
+    background-image: url('../IMG/Fundos/gothic-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: rgb(115, 255, 0) 1px 3px 25px;
     border-radius: 25px;
 }
 .monstros{
-    background-color: rgb(0, 0, 0);
+    background-image: url('../IMG/Fundos/ork-g58ed8d3e7_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: rgb(0, 0, 0) 1px 3px 35px;
     border-radius: 25px;
 }
 .robos{
-    background-color: midnightblue;
-
+    background-image: url('../IMG/Fundos/robot-gd393c3d1a_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: rgb(33, 33, 202) 1px 3px 25px;
     border-radius: 25px;
 }
@@ -87,6 +97,7 @@ main{
 .personagens{
     max-width: 40vw;
     max-height: 80vh;
+    
 }
 .container-tamanho{
     max-width: 40vw;
@@ -96,11 +107,13 @@ main{
     margin-left: 1vw;
     margin-right: 1vw;
     border-radius: 40px;
-    background-color: rgb(17, 17, 17);
-    box-shadow: #080808 1px 3px 20px;
-    
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.822);
+    box-shadow: #f3f6f7 1px 5px 5px 1px;
+
 }
 .container-tamanho:hover{
+    background-color: rgba(17, 17, 17, 0.651);
     box-shadow: #f3f6f7 1px 5px 5px 1px;
 }
 
@@ -174,7 +187,7 @@ main{
 
 #orc-warrior{
     max-width: 19vw;
-    padding-top: 14vh;
+    padding-top: 14.3vh;
     padding-bottom: 11vh;
 }
 
@@ -194,4 +207,10 @@ main{
     max-width: 19vw;
     padding-top: 14.4vh;
     padding-bottom: 0vh;
+}
+#war-girl-img{
+    max-width: 35vw;
+    max-height: 60vh;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
 }

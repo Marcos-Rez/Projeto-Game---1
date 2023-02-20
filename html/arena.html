@@ -7,9 +7,8 @@
         <title>X - Force Evolution</title>
         <link rel="stylesheet" href="../css/arena.css">
         <link rel="stylesheet" href="../css/arena_atributos.css">
+        <link rel="stylesheet" href="../css/jogador1.css">
         <link rel="stylesheet" href="../css/jogador2.css">
-        <!--<link rel="stylesheet" href="../css/escolido.css">-->
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,7 +86,7 @@
                     <p>Elfo</p>
                 </div>
             </div>
-            <div class="personagens" id="mostra-trol">
+            <div class="personagens" id="mostra-troll">
                 <div  class="container-tamanho">
                     <img src="../IMG/Escolidos/Monstros/troll-1/say-shape-g4e412b45c_640.png" alt="" class="img" id="troll-img" >
                     <p>Troll</p>
@@ -107,7 +106,7 @@
             </div>
             <div class="personagens" id="mostra-orc-warrior">
                 <div class="container-tamanho">
-                    <img src="../IMG/Escolidos/Monstros/Orc-4/character-gcd07f9cba_640.png" alt=""class="img"  id="orc-warrior-img">
+                    <img src="../IMG/Escolidos/Monstros/Orc-4/character.png" alt=""class="img"  id="orc-warrior-img">
                     <p>Orc Warrior</p>
                 </div>
             </div>
@@ -125,43 +124,41 @@
             </div>
             <div class="personagens" id="mostra-war-robot">
                 <div class="container-tamanho">
-                    <img src="../IMG/Escolidos/Robos/war-robot/robot-g6099450fc_640.png" alt=""class="img" id="war-robot-img2" >
+                    <img src="../IMG/Escolidos/Robos/war-robot/robot-g6099450fc_640.png" alt=""class="img" id="war-robot-img" >
                     <p >War Robot</p>
                 </div>
             </div>
             <div class="personagens" id="mostra-war-girl">
                 <div class="container-tamanho">
-                    <img src="../IMG/Escolidos/Robos/girl/robot-g542a0cd8c_640.png" alt=""class="img" id="war-robot-girl" >
+                   <img src="../IMG/Escolidos/Robos/girl/robot-e.png" alt=""class="img" id="war-girl-img" >
                     <p >War Girl</p>
                 </div>
             </div>
         </section>
         <section id="atributos">
             <section id="container-princial">
-                <div class="container-vida">
-                    jogador1
+                <div class="container-vida" id="container-vida-p1">
+                    <span id="nome-jogador1"></span>
                     <div id="vida-p1"></div>
                 </div>
-                <div  id="versus">
-                    x
-                </div>
-                <div class="container-vida">
-                    jogador2
+           
+                <div class="container-vida" id="container-vida-p2">
+                    <span id="nome-jogador2"></span>
                     <div id="vida-p2"></div>
                 </div>
             </section>
 
             <section id="container-secundario">
                 <div class="jogador" id="jogador1">
-                    <p class="ataque">Ataque: <span id="taque-1"></span></p>
+                    <p class="ataque">Ataque: <span id="ataque-1"></span></p>
                     <p class="defesa">Defesa: <span id="defesa-1"></span></p>
-                    <p class="velocidade">Velocidade: <span id="velocidade-1"></span></p>
+                    <p class="velocidade">Velocidade: <span id="agilidade-1"></span></p>
                     <p class="habilidade">Habilidade: <span id="habilidade-1"></span></p>
                 </div>
                 <div class="jogador" id="jogador2">
                     <p class="ataque">Ataque: <span id="ataque-2"></span></p>
                     <p class="defesa">Defesa: <span id="defesa-2"></span></p>
-                    <p class="velocidade">Velocidade: <span id="velocidade-2"></span></p>
+                    <p class="velocidade">Velocidade: <span id="agilidade-2"></span></p>
                     <p class="habilidade">Habilidade: <span id="habilidade-2"></span></p>
                 </div>
             </section>
@@ -177,15 +174,71 @@
                     <div id="defesa-rodada-jogador2">Defendendo com: <span id="defendendo-2"></span></div>
                 </div>
             </section>
+
+            <section id="rodadas">
+                <div id="rodada-ataque">
+                    <p>Sua vez. Olhe seu ataque e sua defesa para esta rodada e decida se vai atacar ou defender. Se escolher defender passara a vez para o oponente.</p>
+                </div>
+                <div id="rodada-defesa">
+                    <p>Vez do adversário. Seu modo é de defesa</p>
+                </div>
+            </section>
+
+            <section id="ataque-defesa">
+                <section class="container-resultado">
+                    <div id="atacando_p1">
+                        <img class="espada" src="../IMG/botao/sabre.png" alt="">
+                        <p>Atacar</p>
+                    </div>
+                   
+                    <div id="defendendo_p1">
+                        <img class="escudo" src="../IMG/botao/shield-g338b61b9f_640.png" alt="">
+                        <p>Defender</p>
+                    </div>
+                </section>
+
+                <section id="rodada-dado">
+                    <div>
+                        <img src="../IMG/dado.gif" alt="" id="dado">
+                    </div>
+                </section>
+
+                <section class="container-resultado">
+                    <div id="atacando">
+                        <img class="espada" src="../IMG/botao/sabre.png" alt="">
+                        <p>Atacar</p>
+                    </div>
+                   
+                    <div id="defendendo">
+                        <img class="escudo" src="../IMG/botao/shield-g338b61b9f_640.png" alt="">
+                        <p>Defender</p>
+                    </div>
+                </section>
+            </section>
+
+
+
         </section>
 
 
-        <section class="container" id="container-jogador2">
-
+        <section class="container-jogador2" id="container-jogador2">
+            <div class="personagens-jogador2" id="">
+                <div class="container-tamanho-jogador2">
+                    <img src="../IMG/botao/shield-g338b61b9f_640.png" alt="" class="img-jogador2" id="img-jogador2">
+                </div>
+            </div>
         </section>
 
         
     </main>
+    <footer id="footer">
+        <p>Desenvolvido por  Marcos Rezende</p>
+        <p><a href="https://github.com/Marcos-Rez" target="_blank" rel="noopener noreferrer">github</a></p>
+        <p><a href="https://www.linkedin.com/in/marcos-dev" target="_blank" rel="noopener noreferrer">linkedin</a></p>
+        <p>E-mail: marcos_rezende1989@hotmail.com</p>
+    </footer>
+
+    <script type="module" src="../js/jogador1.js"></script>
     <script type="module" src="../js/jogador2.js"></script>
 </body>
 </html>
