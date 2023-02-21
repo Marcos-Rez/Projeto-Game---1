@@ -163,3 +163,12 @@
 .container-tamanho > p{
     display: none;
 }
+
+#ataque-rodada-jogador1{
+
+    margin-top: 1vh;
+    background-color: #16161693;
+    border-radius: 5px;
+    
+    padding-left: 0.5vw;
+}

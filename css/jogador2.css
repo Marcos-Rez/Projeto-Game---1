@@ -21,3 +21,18 @@
 .img-jogador2{
     max-width: 29.5vw;
 }
+#defesa-rodada-jogador2{
+
+    margin-top: 1vh;
+    background-color: #16161693;
+    border-radius: 5px;
+    padding-top: 0.5vh;
+    
+}
+#ataque-rodada-jogador2{
+    margin-top: 1vh;
+    background-color: #16161693;
+    border-radius: 5px;
+    
+    padding-left: 0.5vw;
+}

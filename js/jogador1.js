@@ -60,29 +60,79 @@ function defesa(defesa, agilidade, habilidade, nomeDoJogador, escutarPersonagem)
     defendendoCom.innerText = defesa_p;
 
     localStorage.setItem(escutarPersonagem, defesa_p);
+
+    let atacar = document.querySelector('.escudo');
+
+    atacar.addEventListener('click', ()=>{//'#atacando_p1' ou '#atacando_p2'
+        dados = habilidade * 6;
+        habilidade_p = Math.floor(Math.random() * (dados - 1 + 1) + 1);
+        defesa_p = defesa + habilidade_p;
+   
+        defendendoCom = document.querySelector(nomeDoJogador);//'#defendendo-1' ou '#defendendo-2'
+       defendendoCom.innerText = defesa_p;
+   
+       localStorage.setItem(escutarPersonagem, defesa_p);
+   
+       atacar = document.querySelector(escutarPersonagem);
+    });
+
     let defender = document.querySelector(escutarPersonagem).addEventListener('click', ()=>{//'#defendendo_p1'
-        alert('Nenhum evento');
+        //alert('Nenhum evento');
     })
     return defesa_p;
 }
 
 
-function nomeVida(arr, vida, nomeJogador, vidaJogador){
-    let porcentagem;
-    if(vida == 150){
-        porcentagem = (10 * 150) / 100 ;
-    }else if(vida == 100){
-        porcentagem = (10 * 100) / 100 ;
-    }
+function nomeVida(personagem, vida, nomeJogador, vidaJogador){
+    let life = vida;
+    let ataqueDaDeP2;
+    let defesaDeP1;
+    let porcentagem = 0;
+        porcentagem += (10 * vida) / 100;
 
     let nome = document.querySelector(nomeJogador);//'#nome-jogador1' ou '#nome-jogador2'
-    nome.innerText = arr;
+    nome.innerText = personagem;
 
     let vidaJogador1 = document.querySelector(vidaJogador);//'#vida-p1' ou '#vida-p2'
-    vidaJogador1.innerText = vida;
-
-    let porcentagemVida = Number(vida);
+    vidaJogador1.innerText = life;
     vidaJogador1.style.maxWidth = `${porcentagem}vw`;
+
+    let marcar_defesa_jogador1 = document.getElementById('defesa-rodada-jogador1');
+    let desmarcar_ataque_jogador1 = document.getElementById('ataque-rodada-jogador1');
+    let marcar_ataque_jogador2 = document.getElementById('ataque-rodada-jogador2');
+    let desmarcar_defesa_jogador2 = document.getElementById('defesa-rodada-jogador2');
+
+    let ataq = document.querySelector('.escudo');
+    ataq.addEventListener('click', ()=>{
+        
+        marcar_defesa_jogador1.style.color = 'lime';
+        desmarcar_ataque_jogador1.style.color = '';
+        marcar_ataque_jogador2.style.color = 'red';
+        desmarcar_defesa_jogador2.style.color = '';
+
+        
+
+        ataqueDaDeP2 = Number(localStorage.getItem('#atacando-2'));
+        defesaDeP1 = Number(localStorage.getItem('#defendendo_p1'));
+        alert(ataqueDaDeP2);
+        alert(defesaDeP1);
+        
+        let dano = defesaDeP1 - ataqueDaDeP2;
+
+        if(defesaDeP1 > ataqueDaDeP2){
+            life += dano;
+        }
+        if(defesaDeP1 <= ataqueDaDeP2){
+            life += dano;
+        }
+        alert(dano)
+        
+        vidaJogador1.innerText = life;
+
+        porcentagem += (dano / 10);
+        vidaJogador1.style.maxWidth = `${porcentagem}vw`;
+    })
+
 }
 
 

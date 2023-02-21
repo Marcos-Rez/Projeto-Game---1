@@ -54,3 +54,7 @@ header {
 #main{
     display: flex;
 }
+#main > section{
+    margin: 0 auto;
+    margin-top: 2vh;
+}

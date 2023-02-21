@@ -5,20 +5,18 @@
 }
 #atributos{
     margin-top: 5vh;
-    max-width: 90vw;
+    max-width: 30vw;
     box-shadow: #0e0c0c60 1px 3px 20px;
     background-color: rgba(193, 202, 199, 0.089);
     border-radius: 7px;
-
-    
 }
 #container-princial{
     display: flex;
-    min-width: 37vw;
+    min-width: 29vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    justify-content: space-evenly;
-    background-color: rgb(29, 27, 27);
+    justify-content: center;
+    background-color: rgba(36, 34, 34, 0.952);
     border-radius: 7px;
 }
 .container-vida{
@@ -26,7 +24,7 @@
     display: block;
     align-items: center;
     justify-content: center;
-    margin-left: 4vw;
+    margin-left: 2vw;
 
 }
 
@@ -36,14 +34,15 @@
     align-items: center;
 }
 #nome-jogador1{
-    padding-left: 4vw;
+    padding-left: 2vw;
     text-align: center;
 }
 #nome-jogador2{
-    padding-left: 4vw;
+    padding-left: 1vw;
     text-align: center;
 }
 #vida-p1{
+    margin-left: 1vw;
     background-color: lime;
     text-align: center;
 }
@@ -52,17 +51,16 @@
     justify-self: end;
     text-align: center;
     font-weight: bold;
+   
 
 }
 #versus{
     font-size: 1.4em;
-    margin-left: vw;
-    
 }
 
 #container-secundario{
     display: flex;
-    min-width: 36vw;
+    min-width: 30vw;
     justify-content: space-around;
     margin-top: 3vh;
     background-color: rgba(42, 44, 43, 0.61);
@@ -130,7 +128,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 7vh;
+    margin-top: 5vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
     background-color: black;
