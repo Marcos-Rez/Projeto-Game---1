@@ -7,7 +7,7 @@
     margin-top: 5vh;
     max-width: 30vw;
     box-shadow: #0e0c0c60 1px 3px 20px;
-    background-color: rgba(193, 202, 199, 0.089);
+    
     border-radius: 7px;
 }
 #container-princial{
@@ -63,8 +63,11 @@
     min-width: 30vw;
     justify-content: space-around;
     margin-top: 3vh;
-    background-color: rgba(42, 44, 43, 0.61);
+   
     border-radius: 7px;
+
+    box-shadow: #0e0c0c60 1px 3px 20px;
+    background-color: rgba(193, 202, 199, 0.089);
 }
 
 #container-rodada{
@@ -72,7 +75,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(42, 44, 43, 0.61);
+    box-shadow: #0e0c0c60 1px 3px 20px;
+    background-color: rgba(193, 202, 199, 0.089);
     border-radius: 7px;
 
 }
@@ -86,8 +90,8 @@
     margin-top: 3vh;
     max-height: 15vh;
  
-
-    background-color: rgba(42, 44, 43, 0.61);
+    box-shadow: #0e0c0c60 1px 3px 20px;
+    background-color: rgba(193, 202, 199, 0.089);
     border-radius: 7px;
 }
 
@@ -95,13 +99,19 @@
     display: flex;
    
 }
+#atacando_p1{
+    margin-right: 2vw;
+}
+#defendendo_p1{
+    margin-left: 2vw;
+}
 
 .espada{
     max-width: 3.5vw;
     cursor: pointer;
     transform: scaleY(-1);
-    margin-right: 2vw;
-    padding-left: 1vw;
+    padding-left: 0.7vw;
+
 
 }
 .espada:hover{
@@ -112,16 +122,22 @@
 .escudo{
     max-width: 5vw;
     cursor: pointer;
-    padding-top: 3vh;
-    padding-bottom: 1vh;
+    margin-left: 0.6vw;
+    padding-bottom: 2.1vh;
+    padding-top: 2.1vh;
+
 }
 .escudo:hover{
     background-color: rgba(0, 0, 0, 0.747);
     border-radius: 7px;
 }
+#rodada-dado p{
+    text-align: center;
+}
 #dado{
     max-width: 4vw;
     border-radius: 14px;
+    margin-top: 2vh;
 }
 
 #footer{
