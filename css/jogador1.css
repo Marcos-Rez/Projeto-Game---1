@@ -172,3 +172,17 @@
     
     padding-left: 0.5vw;
 }
+#defesa-rodada-jogador1{
+    margin-top: 1vh;
+    background-color: #16161693;
+    border-radius: 5px;
+    
+    padding-left: 0.5vw;
+}
+
+#atacando_p1{
+    display: block;
+}
+#defendendo_p1{
+    
+}

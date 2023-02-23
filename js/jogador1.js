@@ -18,6 +18,10 @@ const personagens = [
     {nome: 'War Girl', ataque: 10, defesa: 7, agilidade: 3, vida: 100, habilidade: 1},
 ]
 let personagemEscolido;
+function escondeEspada(){
+    let espada = document.querySelector('#atacando_p1');
+        espada.style.display = 'none';
+    }
 
 function ataque(ataque, agilidade, habilidade, nomeDoJogador, escutarPersonagem ){
     let atacar = document.querySelector(escutarPersonagem);
@@ -45,6 +49,10 @@ function ataque(ataque, agilidade, habilidade, nomeDoJogador, escutarPersonagem 
         atacandoCom = document.querySelector(nomeDoJogador);//'#atacando-1' ou '#atacando-2'
         atacandoCom.innerText = ataque_p;
         localStorage.setItem(escutarPersonagem, ataque_p);
+        
+        
+        let espada = document.querySelector('#atacando_p1');
+        espada.style.display = 'none';
         
     });
 
@@ -74,11 +82,11 @@ function defesa(defesa, agilidade, habilidade, nomeDoJogador, escutarPersonagem)
        localStorage.setItem(escutarPersonagem, defesa_p);
    
        atacar = document.querySelector(escutarPersonagem);
+
+       let espada = document.querySelector('#atacando_p1');
+       espada.style.display = 'block';
     });
 
-    let defender = document.querySelector(escutarPersonagem).addEventListener('click', ()=>{//'#defendendo_p1'
-        //alert('Nenhum evento');
-    })
     return defesa_p;
 }
 
@@ -114,8 +122,7 @@ function nomeVida(personagem, vida, nomeJogador, vidaJogador){
 
         ataqueDaDeP2 = Number(localStorage.getItem('#atacando-2'));
         defesaDeP1 = Number(localStorage.getItem('#defendendo_p1'));
-        alert(ataqueDaDeP2);
-        alert(defesaDeP1);
+      
         
         let dano = defesaDeP1 - ataqueDaDeP2;
 
@@ -125,7 +132,7 @@ function nomeVida(personagem, vida, nomeJogador, vidaJogador){
         if(defesaDeP1 <= ataqueDaDeP2){
             life += dano;
         }
-        alert(dano)
+        
         
         vidaJogador1.innerText = life;
 
