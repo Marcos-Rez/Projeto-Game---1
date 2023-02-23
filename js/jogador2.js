@@ -155,7 +155,7 @@ let personagem_jogador2;
     let proximoPersonagem = document.querySelector('.container-resultado');
     proximoPersonagem.addEventListener('click', ()=> {
         let porcentagem = Number(localStorage.getItem('vidaJogador2'));
-        
+      
         if(porcentagem <= 0){
             cont++;
             personagem_jogador2 = arrPersonagens[cont]
@@ -163,18 +163,6 @@ let personagem_jogador2;
          }
     })
 
-   /* let jogador = document.querySelector('.container-resultado')
-    jogador.addEventListener('click', ()=>{
-        let porcentagem = Number(localStorage.getItem('vidaJogador2'));
-   
-        let cont = 0;
-        if(porcentagem <= 0){
-            cont++;
-         }
-
-         personagem_jogador2 = arrPersonagens[cont]
-        jogador2(personagem_jogador2);
-    })*/
 
 })();
 
@@ -189,6 +177,7 @@ function jogador2(personagem_jogador2){
                 defesa(personagens2[0].defesa, personagens2[0].agilidade, personagens2[0].habilidade, '#defendendo-2');
                 ataque(personagens2[0].ataque, personagens2[0].agilidade, personagens2[0].habilidade, '#atacando-2');
                 nomeVida(personagens2[0].nome, personagens2[0].vida);
+                localStorage.setItem('vidaJogador2', personagens2[0].vida/10)
         break;
         case 2:
             atributosDojogador(personagens2[1].ataque, personagens2[1].defesa, personagens2[1].agilidade, personagens2[1].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -199,7 +188,7 @@ function jogador2(personagem_jogador2){
             defesa(personagens2[1].defesa, personagens2[1].agilidade, personagens2[1].habilidade, '#defendendo-2');
             ataque(personagens2[1].ataque, personagens2[1].agilidade, personagens2[1].habilidade, '#atacando-2');
             nomeVida(personagens2[1].nome, personagens2[1].vida);
-
+            localStorage.setItem('vidaJogador2', personagens2[1].vida/10)
 
         break;
         case 3:
@@ -211,6 +200,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[2].ataque, personagens2[2].agilidade, personagens2[2].habilidade, '#atacando-2');
             defesa(personagens2[2].defesa, personagens2[2].agilidade, personagens2[2].habilidade, '#defendendo-2');
             nomeVida(personagens2[2].nome, personagens2[2].vida);
+            localStorage.setItem('vidaJogador2', personagens2[2].vida/10)
         break;
         case 4: 
         atributosDojogador(personagens2[3].ataque, personagens2[3].defesa, personagens2[3].agilidade, personagens2[3].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -221,6 +211,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[3].ataque, personagens2[3].agilidade, personagens2[3].habilidade, '#atacando-2');
             defesa(personagens2[3].defesa, personagens2[3].agilidade, personagens2[3].habilidade, '#defendendo-2');
             nomeVida(personagens2[3].nome, personagens2[3].vida);
+            localStorage.setItem('vidaJogador2', personagens2[3].vida/10)
         break;
         case 5:
             atributosDojogador(personagens2[4].ataque, personagens2[4].defesa, personagens2[4].agilidade, personagens2[4].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -229,6 +220,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[4].ataque, personagens2[4].agilidade, personagens2[4].habilidade, '#atacando-2');
             defesa(personagens2[4].defesa, personagens2[4].agilidade, personagens2[4].habilidade, '#defendendo-2');
             nomeVida(personagens2[4].nome, personagens2[4].vida);
+            localStorage.setItem('vidaJogador2', personagens2[4].vida/10)
             break;
         case 6:
             atributosDojogador(personagens2[5].ataque, personagens2[5].defesa, personagens2[5].agilidade, personagens2[5].habilidade,'#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -239,6 +231,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[5].ataque, personagens2[5].agilidade, personagens2[5].habilidade, '#atacando-2');
             defesa(personagens2[5].defesa, personagens2[5].agilidade, personagens2[5].habilidade, '#defendendo-2');
             nomeVida(personagens2[5].nome, personagens2[5].vida);
+            localStorage.setItem('vidaJogador2', personagens2[5].vida/10)
             break;
         case 7: 
         atributosDojogador(personagens2[6].ataque, personagens2[6].defesa, personagens2[6].agilidade, personagens2[6].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -249,6 +242,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[6].ataque, personagens2[6].agilidade, personagens2[6].habilidade, '#atacando-2');
             defesa(personagens2[6].defesa, personagens2[6].agilidade, personagens2[6].habilidade, '#defendendo-2');
             nomeVida(personagens2[6].nome, personagens2[6].vida);
+            localStorage.setItem('vidaJogador2', personagens2[6].vida/10)
             break;
         case 8:
             atributosDojogador(personagens2[7].ataque, personagens2[7].defesa, personagens2[7].agilidade, personagens2[7].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -258,6 +252,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[7].ataque, personagens2[7].agilidade, personagens2[7].habilidade, '#atacando-2');
             defesa(personagens2[7].defesa, personagens2[7].agilidade, personagens2[7].habilidade, '#defendendo-2');
             nomeVida(personagens2[7].nome, personagens2[7].vida);
+            localStorage.setItem('vidaJogador2', personagens2[7].vida/10)
             break;
         case 9:
             atributosDojogador(personagens2[8].ataque, personagens2[8].defesa, personagens2[8].agilidade, personagens2[8].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -268,6 +263,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[8].ataque, personagens2[8].agilidade, personagens2[8].habilidade, '#atacando-2');
             defesa(personagens2[8].defesa, personagens2[8].agilidade, personagens2[8].habilidade, '#defendendo-2');
             nomeVida(personagens2[8].nome, personagens2[8].vida)
+            localStorage.setItem('vidaJogador2', personagens2[8].vida/10)
             break
         case 10:
             atributosDojogador(personagens2[9].ataque, personagens2[9].defesa, personagens2[9].agilidade, personagens2[9].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -278,6 +274,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[9].ataque, personagens2[9].agilidade, personagens2[9].habilidade, '#atacando-2');
             defesa(personagens2[9].defesa, personagens2[9].agilidade, personagens2[9].habilidade, '#defendendo-2');
             nomeVida(personagens2[9].nome, personagens2[9].vida);
+            localStorage.setItem('vidaJogador2', personagens2[9].vida/10)
             break;
         case 11:
             atributosDojogador(personagens2[10].ataque, personagens2[10].defesa, personagens2[10].agilidade, personagens2[10].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -288,6 +285,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[10].ataque, personagens2[10].agilidade, personagens2[10].habilidade, '#atacando-2');
             defesa(personagens2[10].defesa, personagens2[10].agilidade, personagens2[10].habilidade, '#defendendo-2');
             nomeVida(personagens2[10].nome, personagens2[10].vida);
+            localStorage.setItem('vidaJogador2', personagens2[10].vida/10)
             break;
         case 12:
             atributosDojogador(personagens2[11].ataque, personagens2[11].defesa, personagens2[11].agilidade, personagens2[11].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -297,6 +295,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[11].ataque, personagens2[11].agilidade, personagens2[11].habilidade, '#atacando-2');
             defesa(personagens2[11].defesa, personagens2[11].agilidade, personagens2[11].habilidade, '#defendendo-2');
             nomeVida(personagens2[11].nome, personagens2[11].vida);
+            localStorage.setItem('vidaJogador2', personagens2[11].vida/10)
             break;
         case 13:
             atributosDojogador(personagens2[12].ataque, personagens2[12].defesa, personagens2[12].agilidade, personagens2[12].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -307,6 +306,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[12].ataque, personagens2[12].agilidade, personagens2[12].habilidade, '#atacando-2');
             defesa(personagens2[12].defesa, personagens2[12].agilidade, personagens2[12].habilidade, '#defendendo-2');
             nomeVida(personagens2[12].nome, personagens2[12].vida);
+            localStorage.setItem('vidaJogador2', personagens2[12].vida/10)
         break;
         case 14:
             atributosDojogador(personagens2[13].ataque, personagens2[13].defesa, personagens2[13].agilidade, personagens2[13].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -317,6 +317,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[13].ataque, personagens2[13].agilidade, personagens2[13].habilidade, '#atacando-2');
             defesa(personagens2[13].defesa, personagens2[13].agilidade, personagens2[13].habilidade, '#defendendo-2');
             nomeVida(personagens2[13].nome, personagens2[13].vida);
+            localStorage.setItem('vidaJogador2', personagens2[13].vida/10)
             break;
         case 15:
             atributosDojogador(personagens2[14].ataque, personagens2[14].defesa, personagens2[14].agilidade, personagens2[14].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -326,6 +327,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[14].ataque, personagens2[14].agilidade, personagens2[14].habilidade, '#atacando-2');
             defesa(personagens2[14].defesa, personagens2[14].agilidade, personagens2[14].habilidade, '#defendendo-2');
             nomeVida(personagens2[14].nome, personagens2[14].vida);
+            localStorage.setItem('vidaJogador2', personagens2[14].vida/10)
             break;
         case 16:
             atributosDojogador(personagens2[15].ataque, personagens2[15].defesa, personagens2[15].agilidade, personagens2[15].habilidade, '#ataque-2', '#defesa-2', '#agilidade-2', '#habilidade-2');
@@ -336,6 +338,7 @@ function jogador2(personagem_jogador2){
             ataque(personagens2[15].ataque, personagens2[15].agilidade, personagens2[15].habilidade, '#atacando-2');
             defesa(personagens2[15].defesa, personagens2[15].agilidade, personagens2[15].habilidade, '#defendendo-2');
             nomeVida(personagens2[15].nome, personagens2[15].vida);
+            localStorage.setItem('vidaJogador2', personagens2[15].vida/10)
             break;
         default:
             alert('Erro ao esolher personagem.');

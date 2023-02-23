@@ -1,4 +1,5 @@
 
+
 const personagens = [
     {nome: 'Ninja', ataque: 4, defesa: 1, agilidade: 5, vida: 100, habilidade: 3},
     {nome: 'Guerreira', ataque: 4, defesa: 2, agilidade: 4, vida: 100, habilidade: 3},
@@ -138,6 +139,11 @@ function nomeVida(personagem, vida, nomeJogador, vidaJogador){
 
         porcentagem += (dano / 10);
         vidaJogador1.style.maxWidth = `${porcentagem}vw`;
+
+        if(porcentagem <= 0){
+            alert(`Você perdeu.\nVida ${porcentagem}%.\nFim de Jogo!`);
+            
+        }
     })
 
 }
@@ -275,3 +281,4 @@ switch(personagemEscolido){
         alert('Ocorreu um erro!');
         break;
 }
+
