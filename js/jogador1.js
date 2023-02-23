@@ -19,10 +19,7 @@ const personagens = [
     {nome: 'War Girl', ataque: 10, defesa: 7, agilidade: 3, vida: 100, habilidade: 1},
 ]
 let personagemEscolido;
-function escondeEspada(){
-    let espada = document.querySelector('#atacando_p1');
-        espada.style.display = 'none';
-    }
+
 
 function ataque(ataque, agilidade, habilidade, nomeDoJogador, escutarPersonagem ){
     let atacar = document.querySelector(escutarPersonagem);
@@ -54,6 +51,9 @@ function ataque(ataque, agilidade, habilidade, nomeDoJogador, escutarPersonagem 
         
         let espada = document.querySelector('#atacando_p1');
         espada.style.display = 'none';
+
+        let escudo = document.querySelector('#defendendo_p1');
+        escudo.style.display = 'block';
         
     });
 
@@ -84,8 +84,13 @@ function defesa(defesa, agilidade, habilidade, nomeDoJogador, escutarPersonagem)
    
        atacar = document.querySelector(escutarPersonagem);
 
+
        let espada = document.querySelector('#atacando_p1');
        espada.style.display = 'block';
+
+       let escudo = document.querySelector('#defendendo_p1');
+       escudo.style.display = 'none';
+
     });
 
     return defesa_p;
@@ -141,8 +146,8 @@ function nomeVida(personagem, vida, nomeJogador, vidaJogador){
         vidaJogador1.style.maxWidth = `${porcentagem}vw`;
 
         if(porcentagem <= 0){
-            alert(`Você perdeu.\nVida ${porcentagem}%.\nFim de Jogo!`);
-            
+            alert(`Você perdeu.\nVida ${porcentagem.toFixed(2)}%.\n\nFim de Jogo!`);
+            window. history. back()
         }
     })
 
