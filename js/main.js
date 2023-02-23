@@ -2,7 +2,7 @@
 
 let teste = document.querySelector('#iniciar');
 teste.addEventListener('click', ()=>{
-    alert('click')
+    alert('Escolha seu personagem.')
 })
 
 /**Class Humanos: Evento de click para escolher o personagem e salvar no localStorage */
