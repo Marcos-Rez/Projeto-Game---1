@@ -37,17 +37,21 @@ function ataque(ataque, agilidade, habilidade, nomeDoJogador, escutarPersonagem 
         localStorage.setItem(escutarPersonagem, ataque_p);
     }
    
+    
     atacar.addEventListener('click', ()=>{//'#atacando_p1' ou '#atacando_p2'
-        
+     
+
         localStorage.setItem(escutarPersonagem, ataque_p);
         dados = habilidade * 6;
         habilidade_p = Math.floor(Math.random() * (dados - 1 + 1) + 1);
         ataque_p = ataque + habilidade_p;
 
+        
+
+
         atacandoCom = document.querySelector(nomeDoJogador);//'#atacando-1' ou '#atacando-2'
         atacandoCom.innerText = ataque_p;
         localStorage.setItem(escutarPersonagem, ataque_p);
-        
         
         let espada = document.querySelector('#atacando_p1');
         espada.style.display = 'none';

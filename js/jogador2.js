@@ -28,18 +28,18 @@ function ataque(ataque, agilidade, habilidade, nomeDoJogador ){
         let atacandoCom = document.querySelector(nomeDoJogador);
 
         localStorage.setItem('#atacando-2', ataque_p);
-        
-        
+     
         let defesa = document.querySelector('.escudo');
         defesa.addEventListener('click', ()=>{
-
+          
             atacandoCom.innerText = ataque_p;
 
                 dados = habilidade * 6;
                 habilidade_p = Math.floor(Math.random() * (dados - 1 + 1) + 1);
                 ataque_p = ataque + habilidade_p;
                 atacandoCom = document.querySelector(nomeDoJogador);//'#atacando-1' ou '#atacando-2'
-            
+
+
                 localStorage.setItem('#atacando-2', ataque_p);
                 //atacandoCom.innerText = ataque_p;
 
